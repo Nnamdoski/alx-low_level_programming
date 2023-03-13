@@ -11,14 +11,11 @@
  */
 
 char *_strdup(char *str)
-
 {
 
 	char *aaa;
 
 	int i, r = 0;
-
-
 
 	if (str == NULL)
 
@@ -30,23 +27,15 @@ char *_strdup(char *str)
 
 		i++;
 
-
-
 	aaa = malloc(sizeof(char) * (i + 1));
-
-
 
 	if (aaa == NULL)
 
 		return (NULL);
 
-
-
 	for (r = 0; str[r]; r++)
 
 		aaa[r] = str[r];
-
-
 
 	return (aaa);
 
